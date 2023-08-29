@@ -1,0 +1,116 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Tabs and Form Styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.tab.active {
+    background-color: #fff;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+}
+
+.tab:hover {
+    background-color: #2980b9;
+    transition: background-color 0.3s ease;
+}
+
+.admin-form {
+    padding: 20px;
+    display: none;
+    animation: fadeIn 0.5s ease;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+}
+
+.admin-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.admin-form input[type="text"]:focus,
+.admin-form input[type="number"]:focus {
+    border-color: #3498db;
+}
+
+.admin-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-form button:hover {
+    background-color: #2980b9;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

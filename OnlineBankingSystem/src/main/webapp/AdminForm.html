@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AdminFormStyles.css">
+    <title>Admin Registration</title>
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Admin Registration</h2>
+        <form class="admin-form" action="saveadmin">
+            <label for="admin-id">ID</label>
+            <input type="text" id="admin-id" name="id" required>
+            
+            <label for="admin-name">Name</label>
+            <input type="text" id="admin-name" name="name" required>
+            
+            <label for="admin-email">Email</label>
+            <input type="email" id="admin-email" name="email" required>
+            
+            <label for="admin-password">Password</label>
+            <input type="password" id="admin-password" name="password" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
